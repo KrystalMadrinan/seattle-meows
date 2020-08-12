@@ -1,1 +1,1 @@
-# seattle-meows
+# Bootstrap Project: Seattle Meows

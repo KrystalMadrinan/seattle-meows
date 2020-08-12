@@ -2,11 +2,10 @@
   "name": "seattle-meows",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "main": "server.js",
   "scripts": {
-    "lite": "lite-server",
-    "start": "npm run lite",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -20,10 +19,12 @@
   "homepage": "https://github.com/KrystalMadrinan/seattle-meows#readme",
   "dependencies": {
     "bootstrap": "^4.5.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
     "jquery": "^3.5.1",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "superagent": "^6.0.0"
   },
-  "devDependencies": {
-    "lite-server": "^2.5.4"
-  }
+  "devDependencies": {}
 }
