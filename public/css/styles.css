@@ -3,11 +3,26 @@ h1 {
     font-family: "Sacramento", cursive;
 }
 
+
+.navbar {
+    background-color: #F6F7F6;
+}
+
+a {
+    color: #3D8DA9;
+}
+
+
+
+
+
+/* VIDEO STUFF */
+
 .jumbotron {
     position: relative;
     background-color: black;
-    height: 75vh;
-    min-height: 25rem;
+    height: 30vh;
+    min-height: 22rem;
     width: 100%;
     overflow: hidden;
 }
@@ -16,10 +31,8 @@ h1 {
     position: absolute;
     top: 50%;
     left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
+    width: 500px;
+    height: 500px;
     z-index: 0;
     -ms-transform: translateX(-50%) translateY(-50%);
     -moz-transform: translateX(-50%) translateY(-50%);
