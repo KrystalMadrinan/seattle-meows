@@ -1,27 +1,22 @@
 h1 {
-    color: #1A4661;
+    color: #54CCE7;
     font-family: "Sacramento", cursive;
 }
-
 
 .navbar {
     background-color: #F6F7F6;
 }
 
-a {
-    color: #3D8DA9;
+.nav {
+    color: #1A4661;
 }
-
-
-
-
 
 /* VIDEO STUFF */
 
 .jumbotron {
     position: relative;
     background-color: black;
-    height: 30vh;
+    height: 48vh;
     min-height: 22rem;
     width: 100%;
     overflow: hidden;
@@ -31,8 +26,9 @@ a {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 500px;
-    height: 500px;
+    height: 30vh;
+    min-height: 22rem;
+    width: auto;
     z-index: 0;
     -ms-transform: translateX(-50%) translateY(-50%);
     -moz-transform: translateX(-50%) translateY(-50%);
@@ -56,8 +52,14 @@ a {
     z-index: 1;
 }
 
+/* FOOTER */
 
+.site-footer {
+    background-color: #F6F7F6;
+    padding: 20px 0;
+    border-top: 5px solid #1A4661;
+}
 
-
-
-  
+.logo-bottom {
+    margin-left: 0;
+}
