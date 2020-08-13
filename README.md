@@ -1,7 +1,18 @@
 # Bootstrap Project: Seattle Meows
 
 ### Author: Krystal Madrinan
+**Version**: 1.0.0
 
-### Links and Resouces
 
-- [front-end application](https://seattle-meows.herokuapp.com/)
+## Overview
+
+
+## Getting Started
+Vist the deployed site [here](https://seattle-meows.herokuapp.com/)
+
+## Resources
+
+
+## Credits and Colaborations
+
+- [Video Header Snippet by Start Bootstrap](https://startbootstrap.com/snippets/video-header/)
