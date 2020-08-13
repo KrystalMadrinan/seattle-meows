@@ -5,20 +5,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/css/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Sacramento&display=swap" />
+
+
     <title>Seattle Meows</title>
 </head>
 
 <body>
 
     <header>
-        <nav>Navigation</nav>
-        <li>one</li>
-        <li>two</li>
-        <li>three</li>
+        <div class="container"></div>
+        <!-- NAVIGATION MENU -->
+        <nav class="navbar navbar-light navbar-expand-md">
+            
+                <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30" /></a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                
+                    <h1>Seattle Meows</h1>
+
+                    <ul class="navbar-nav justify-content-center">
+                        <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i>
+                                Home</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="/resources"><i class="fa fa-info fa-lg"></i>
+                                Resources</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/blog"><i class="fa fa-list fa-lg"></i> Blog</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="/contact"><i
+                                    class="fa fa-address-card fa-lg"></i>
+                                Contact</a></li>
+                    </ul>
+                    <!-- LOGIN MODAL -->
+                    <span class="navbar-text ml-auto">
+                        <a role="button" data-toggle="modal" data-target="#loginModal">
+                            <i class="fa fa-sign-in"></i> Login
+                        </a>
+                    </span>
+               
+           
+        </nav>
+    </div>
+
+
+        <div class="jumbotron jumbotron-fluid">
+            <div class="overlay"></div>
+            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+                <!-- <source src="cat-person.mp4" type="video/mp4">
+                <source src="cat-window.mp4" type="video/mp4"> -->
+            </video>
+            <div class="container h-100">
+                <div class="d-flex h-100 text-center align-items-center">
+                    <div class="w-100 text-white">
+                        <h1 class="display-3">Seattle Meows</h1>
+                        <p class="lead mb-0">The #1 resource for cat lovers in the Puget Sound</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </header>
-    <button class="btn btn-info">hello hello</button>
 
 
 
@@ -26,10 +80,45 @@
 
 
 
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-2 offset-1">
+                    <h5>Seattle Meows</h5>
+                   <p>
+                       LOREM IPSUM KFHJASDJFHBNAUKLHFASUILFHASUKLDFHBJK
+                   </p>
+                </div>
+                <div class="col-4 col-sm-2 offset-1">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="aboutus.html">About</a></li>
+                        <li><a href="#">Sites</a></li>
+                        <li><a href="contactus.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <h5>Social</h5>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
+                            class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
+                            class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                            class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
+                            class="fa fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
+    <!-- SCRIPTS -->
     <script src="/js/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
-    <!-- <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script> -->
+    <!-- <script src="/js/popper.min.js"></script> -->
+    <script src="js/app.js"></script>
+
 
 </body>
 
