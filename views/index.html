@@ -11,57 +11,51 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Sacramento&display=swap" />
 
-
     <title>Seattle Meows</title>
 </head>
 
 <body>
 
     <header>
-        <div class="container"></div>
-        <!-- NAVIGATION MENU -->
-        <nav class="navbar navbar-light navbar-expand-md">
-            
-                <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30" /></a>
+        <!-- NAVIGATION -->
+        <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="/assets/logo.png" height="60px" width="250px" /></a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                
-                    <h1>Seattle Meows</h1>
+                <ul class="navbar-nav justify-content-center">
+                    <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i>
+                            Home</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/resources"><i class="fa fa-info fa-lg"></i>
+                            Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/blog"><i class="fa fa-list fa-lg"></i> Blog</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/contact"><i class="fa fa-address-card fa-lg"></i>
+                            Contact</a></li>
+                </ul>
 
-                    <ul class="navbar-nav justify-content-center">
-                        <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i>
-                                Home</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="/resources"><i class="fa fa-info fa-lg"></i>
-                                Resources</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/blog"><i class="fa fa-list fa-lg"></i> Blog</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="/contact"><i
-                                    class="fa fa-address-card fa-lg"></i>
-                                Contact</a></li>
-                    </ul>
-                    <!-- LOGIN MODAL -->
-                    <span class="navbar-text ml-auto">
-                        <a role="button" data-toggle="modal" data-target="#loginModal">
-                            <i class="fa fa-sign-in"></i> Login
-                        </a>
-                    </span>
-               
-           
+                <!-- LOGIN MODAL -->
+                <span class="navbar-text ml-auto">
+                    <a role="button" data-toggle="modal" data-target="#loginModal">
+                        <i class="fa fa-sign-in"></i> Login
+                    </a>
+                </span>
+            </div>
         </nav>
-    </div>
 
 
+        <!-- VIDEO BACKGROUND -->
         <div class="jumbotron jumbotron-fluid">
             <div class="overlay"></div>
-            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-                <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
-                <!-- <source src="cat-person.mp4" type="video/mp4">
-                <source src="cat-window.mp4" type="video/mp4"> -->
+            <video autoplay muted loop>
+                <source src="/assets/cat-person.mp4" type="video/mp4">
+                <source src="/assets/cat-window.mp4" type="video/mp4">
             </video>
+            
             <div class="container h-100">
                 <div class="d-flex h-100 text-center align-items-center">
                     <div class="w-100 text-white">
@@ -85,9 +79,9 @@
             <div class="row">
                 <div class="col-4 col-sm-2 offset-1">
                     <h5>Seattle Meows</h5>
-                   <p>
-                       LOREM IPSUM KFHJASDJFHBNAUKLHFASUILFHASUKLDFHBJK
-                   </p>
+                    <p>
+                        LOREM IPSUM KFHJASDJFHBNAUKLHFASUILFHASUKLDFHBJK
+                    </p>
                 </div>
                 <div class="col-4 col-sm-2 offset-1">
                     <h5>Links</h5>
