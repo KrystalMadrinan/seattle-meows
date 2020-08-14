@@ -23,7 +23,6 @@ app.get('/blog', renderBlog);
 app.get('/contact', renderContact);
 
 
-
 function renderHome(req, res) {
     res.sendFile(__dirname + '/views/index.html');
 }
