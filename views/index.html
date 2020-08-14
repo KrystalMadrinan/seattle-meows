@@ -16,41 +16,36 @@
 
 <body>
 
-    <header>
-        <!-- NAVIGATION -->
-        <nav class="navbar navbar-expand-sm sticky-top">
-            <div class="container">
-                <a class="navbar-brand" href="#"><img src="/assets/logo.png" height="60px" width="250px" /></a>
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="/assets/logo.png" height="60px" width="250px" /></a>
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse">
-                    <ul class=" nav navbar-nav ml-5">
-                        <li class="nav-item" role="presentation"><a class="nav-link active" href="#">
-                                Home</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="/resources">
-                                Resources</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/blog"> Blog</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="/contact">
-                                Contact</a></li>
-                    </ul>
-                </div>
-
-
-                <!-- LOGIN MODAL -->
-                <span class="navbar-text ml-auto">
-                    <a role="button" data-toggle="modal" data-target="#loginModal">
-                        <i class="fa fa-sign-in"></i> Login
-                    </a>
-                </span>
+            <div class="collapse navbar-collapse">
+                <ul class=" nav navbar-nav ml-5">
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#">
+                            Home</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/resources">
+                            Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/blog"> Blog</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/contact">
+                            Contact</a></li>
+                </ul>
             </div>
-        </nav>
 
 
+            <!-- LOGIN MODAL -->
+            <span class="navbar-text ml-auto">
+                <a role="button" data-toggle="modal" data-target="#loginModal">
+                    Login
+                </a>
+            </span>
+        </div>
+    </nav>
+
+    <header>
         <!-- VIDEO BACKGROUND -->
         <div class="jumbotron jumbotron-fluid">
             <div class="overlay"></div>
@@ -72,9 +67,72 @@
     </header>
 
 
+    <!-- MAIN CONTAINER -->
+    <div class="container">
+
+        <h1 class="my-4 mx-auto">Blog Updates</h1>
+
+        <div class="card flex-row flex-wrap">
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3 class="card-title my-4">Blog Post</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam
+                    exercitationem expedita
+                    laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos
+                    perspiciatis atque eveniet unde.</p>
+
+            </div>
+        </div>
+        <!-- /.row -->
+        <hr>
+
+        <div class="card flex-row flex-wrap">
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3 class="card-title my-4">Blog Post</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam
+                    exercitationem expedita
+                    laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos
+                    perspiciatis atque eveniet unde.</p>
+
+            </div>
+        </div>
+        <!-- /.row -->
+        <hr>
+
+        <div class="card flex-row flex-wrap">
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3 class="card-title my-4">Blog Post</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam
+                    exercitationem expedita
+                    laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos
+                    perspiciatis atque eveniet unde.</p>
+
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <br>
+
+        <button type="button" class="btn btn-color">Browse All Posts</button>
 
 
+    </div>
 
+   
 
 
     <footer class="site-footer">
@@ -83,9 +141,6 @@
 
                 <div class="col-4 col-sm-2 offset-1">
                     <a class="logo-bottom" href="#"><img src="/assets/logo.png" height="60px" width="250px" /></a>
-                    <p>
-                        LOREM IPSUM
-                    </p>
                 </div>
 
                 <div class="col-4 col-sm-2 offset-1 ml-0">
@@ -118,7 +173,6 @@
     <script src="/js/bootstrap.min.js"></script>
     <!-- <script src="/js/popper.min.js"></script> -->
     <script src="js/app.js"></script>
-
 
 </body>
 
