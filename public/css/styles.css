@@ -1,35 +1,72 @@
+body {
+    background-color: #F6F7F6;
+}
+
+a {
+    color: #3D8DA9;
+}
+
+a:hover {
+   color: #1A4661;
+}
+
 h1 {
     color: #3D8DA9;
     font-family: "Sacramento", cursive;
 }
 
-.navbar {
-    background-color: #F6F7F6;
+.modal-title {
+    color: #3D8DA9;
+    font-family: "Sacramento", cursive;
 }
 
-.nav-link {
+
+
+/* NAVIGATION  */
+
+
+.navbar {
+    background-color: #F6F7F6;
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
     color: #1A4661;
 }
 
-.nav-link:hover {
+
+.navbar-nav .nav-link.active {
+    text-decoration-line: underline;
+    text-decoration-color: #3D8DA9;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #1A4661;
+    
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
     color: #3D8DA9;
 }
 
+
 /* BLOG POSTS HOME PAGE */
 
-.btn-color {
-    background-color: #54CCE7;
+.btn-outline-color {
+    color: #3D8DA9;
+    border-color: #3D8DA9;
 }
+
+
 
 /* VIDEO STUFF */
 
 .jumbotron {
     position: relative;
-    background-color: black;
+    background-color: #F6F7F6;
     height: 48vh;
     min-height: 22rem;
     width: 100%;
     overflow: hidden;
+    margin: 0;
 }
 
 .jumbotron video {
@@ -57,7 +94,6 @@ h1 {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: black;
     opacity: 0.4;
     z-index: 1;
 }
