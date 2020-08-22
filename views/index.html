@@ -17,14 +17,19 @@
 <body>
 
     <!-- NAVIGATION -->
-    <nav class="navbar navbar-expand-sm sticky-top">
+    <nav class="navbar navbar-expand-md navbar-light sticky-top" role="navigation">
         <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#hamburger"
+                aria-controls="hamburger" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
             <a class="navbar-brand" href="#"><img src="/assets/logo.png" height="60px" width="250px" /></a>
 
-            <div class="collapse navbar-collapse">
-                <ul class=" nav navbar-nav ml-5">
+            <div class="collapse navbar-collapse" id="hamburger">
+                <ul class=" nav navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item" role="presentation"><a class="nav-link active" href="#">
-                            Home</a>
+                            Home <span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="/resources">
                             Resources</a></li>
@@ -33,17 +38,49 @@
                     <li class="nav-item"><a class="nav-link" href="/contact">
                             Contact</a></li>
                 </ul>
+
+                <!-- LOGIN MODAL -->
+                <span class="navbar-text ml-auto">
+                    <a role="button" data-toggle="modal" data-target="#loginModal">
+                        Login
+                    </a>
+                </span>
             </div>
-
-
-            <!-- LOGIN MODAL -->
-            <span class="navbar-text ml-auto">
-                <a role="button" data-toggle="modal" data-target="#loginModal">
-                    Login
-                </a>
-            </span>
         </div>
     </nav>
+
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title ml-3">Login</h2>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginUsername">Username</label>
+                                    <input type="username" class="form-control form-control-sm" id="loginUsername"
+                                        placeholder="Enter Username">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginPassword">Password</label>
+                                    <input type="password" class="form-control form-control-sm" id="loginPassword"
+                                        placeholder="Password">
+                                </div>
+                            </div>
+                            <div class="form-row">
+
+                                <button type="submit" class="btn btn-outline-info btn-md ml-1">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <header>
         <!-- VIDEO BACKGROUND -->
@@ -72,106 +109,98 @@
 
         <h1 class="my-4 mx-auto">Blog Updates</h1>
 
-        <div class="card flex-row flex-wrap">
-            <div class="col-md-6">
+        <div class="card flex-row flex-wrap p-0">
+            <div class="col-md-6 p-0">
                 <a href="#">
-                    <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
+                    <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/464x225" alt="">
                 </a>
             </div>
             <div class="col-md-5">
-                <h3 class="card-title my-4">Blog Post</h3>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam
-                    exercitationem expedita
-                    laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos
-                    perspiciatis atque eveniet unde.</p>
+                <h3 class="card-title my-4">Meow</h3>
+                <p class="card-text">Meow meow Meow meow Meow meow Meow meow Meow meow Meow meow Meow meow Meow meow
+                    Meow Meow meow Meow meow Meow meow Meow meow Meow meow Meow meow Meow meow </p>
 
             </div>
         </div>
         <!-- /.row -->
         <hr>
 
-        <div class="card flex-row flex-wrap">
-            <div class="col-md-6">
+        <div class="card flex-row flex-wrap p-0">
+            <div class="col-md-6 p-0">
                 <a href="#">
-                    <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
+                    <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/464x225" alt="">
                 </a>
             </div>
             <div class="col-md-5">
-                <h3 class="card-title my-4">Blog Post</h3>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam
-                    exercitationem expedita
-                    laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos
-                    perspiciatis atque eveniet unde.</p>
+                <h3 class="card-title my-4">Meow</h3>
+                <p class="card-text">Meow meow Meow meow Meow meow Meow meow Meow meow Meow meow Meow meow Meow meow
+                    Meow Meow meow Meow meow Meow meow Meow meow Meow meow Meow meow Meow meow </p>
 
             </div>
         </div>
         <!-- /.row -->
         <hr>
 
-        <div class="card flex-row flex-wrap">
-            <div class="col-md-6">
+        <div class="card flex-row flex-wrap p-0">
+            <div class="col-md-6 p-0">
                 <a href="#">
-                    <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
+                    <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/464x225" alt="">
                 </a>
             </div>
             <div class="col-md-5">
-                <h3 class="card-title my-4">Blog Post</h3>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam
-                    exercitationem expedita
-                    laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos
-                    perspiciatis atque eveniet unde.</p>
+                <h3 class="card-title my-4">Meow</h3>
+                <p class="card-text">Meow meow Meow meow Meow meow Meow meow Meow meow Meow meow Meow meow Meow meow
+                    Meow Meow meow Meow meow Meow meow Meow meow Meow meow Meow meow Meow meow </p>
 
             </div>
         </div>
         <!-- /.row -->
+        <class class="row">
+            <div class="col order-first"></div>
+            <div class="col align-self-center">
+                <button type="button" class="btn btn-outline-color m-5" id="postbutton">Browse All Posts</button>
 
-        <br>
-
-        <button type="button" class="btn btn-color">Browse All Posts</button>
-
+            </div>
+            <div class="col order-last"></div>
+        </class>
 
     </div>
-
-   
 
 
     <footer class="site-footer">
         <div class="container">
             <div class="row">
 
-                <div class="col-4 col-sm-2 offset-1">
+                <div class="col order-first">
                     <a class="logo-bottom" href="#"><img src="/assets/logo.png" height="60px" width="250px" /></a>
                 </div>
 
-                <div class="col-4 col-sm-2 offset-1 ml-0">
-                    <h5>Links</h5>
+                <div class="col col-4 col-sm-2">
+                    <h1>Links</h1>
                     <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
-                        <li><a href="aboutus.html">About</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contactus.html">Contact</a></li>
+                        <li><a href="/resources">Resources</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/contact">Contact</a></li>
                     </ul>
                 </div>
 
-                <div class="col-sm-4 text-center">
-                    <h5>Social</h5>
+                <div class="col-sm-4 text-center order-last">
+                    <h1>Social</h1>
                     <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
                             class="fa fa-instagram"></i></a>
                     <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
                             class="fa fa-facebook"></i></a>
-                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
-                            class="fa fa-twitter"></i></a>
-                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
-                            class="fa fa-youtube"></i></a>
                 </div>
+
             </div>
         </div>
     </footer>
 
+
     <!-- SCRIPTS -->
     <script src="/js/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
-    <!-- <script src="/js/popper.min.js"></script> -->
     <script src="js/app.js"></script>
 
 </body>
